@@ -22,7 +22,6 @@ The following technical indicators were used as input features:
 | First Header  | Second Header | First Header  | Second Header |  First Header | Second Header |  First Header | Second Header |  
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | 
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 ## Usage
 1. Open *parameters.txt* and input the listed parameters (of the format "[Parameter-name]: [value]"). Proper parameter format is included in the text file. 
