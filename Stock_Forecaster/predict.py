@@ -8,19 +8,20 @@ Date: 12/4/2017
 
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 from Stock_Forecaster.fit_model_functions import fit_model, fit_model_cross_validation
 from Stock_Forecaster.helper_functions import date_range, create_shifted_orderbook, read_txt, get_curr_date
 from sklearn.ensemble import RandomForestClassifier
 
 if __name__ == "__main__":
+    # Reads user parameters from text file
     stocks, period = read_txt('parameters.txt')
-    # Technical indicator ist
+
+    # Technical indicator list
     feature_label_list = ['Volume', 'EMA', 'upperband', 'middleband', 'lowerband', 'macdhist', 'CCI', 'RSI', 'WILLR',
                           'Chaikin', 'slowk', 'slowd']
 
     # List of stocks to input
-    ticker_arr = stocks #['MMM', 'INTC', 'COHR']  # 'AMZN', 'ACN', 'AAP', 'AMG', 'ARE', 'LNT', 'MO']
+    ticker_arr = stocks
 
     # Number of days' price data used for training
     lag = 20
@@ -32,7 +33,7 @@ if __name__ == "__main__":
     end_date = get_curr_date()
 
     # Proportion of data between the start date and end date used for training
-    train_prop = 0.8
+    train_prop = 0.9
     test_prop = 1 - train_prop
     # Train-test splits for cross-validation
     splits = 3
@@ -51,7 +52,7 @@ if __name__ == "__main__":
                                                                                         pred_period=pred_period)
 
         # Calculates the date that splits data into training and testing
-        train_test_date = list(date_range(start_date, end_date, 0.9))[0]
+        train_test_date = list(date_range(start_date, end_date, train_prop))[0]
 
         # Sets columns to retrieve data from
         train_test_indices = ['Train', 'Test']
@@ -61,7 +62,7 @@ if __name__ == "__main__":
             feature_label = 'Lag{:d}'.format(i)
             feature_label_list.append(feature_label)
 
-        # Gets data with features from feature list
+        # Gets data with the features from feature list
         stock_feature_df = stock_lag[feature_label_list]
 
         # Input training/testing data
@@ -78,7 +79,7 @@ if __name__ == "__main__":
         test_output = Y[train_test_indices.index('Test')]
 
         # Machine learning model(s)
-        models = [("RF", RandomForestClassifier(n_estimators=60, n_jobs=2, random_state=0))]
+        models = [("RF", RandomForestClassifier(n_estimators=60, n_jobs=2, random_state=None))]
 
         # Trains and tests the model(s)
         results = []

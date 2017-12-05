@@ -23,13 +23,15 @@ def date_range(start, end, prop, set_time = "None"):
         end = datetime.strptime(end,"%b %d %Y")
         diff = (end  - start ) * prop
         yield (start + diff).strftime("%b %d %Y")
+
+    # If specific split time is included, return the specific time
     else:
         yield set_time
 
 def get_curr_date():
     """
     Returns current date formatted with month as a string
-    :return: current date formatted as 'Month Day Year' where month is the month as a string
+    :return: current date formatted as 'Month Day Year' where month is the month as a string of length 3
     """
     # Gets current date as month-day-year
     now = datetime.datetime.now()
@@ -46,7 +48,7 @@ def get_curr_date():
 def read_txt(fname):
     """
     Reads user input from the parameters text file.
-    :param fname: parameters text file
+    :param fname: text file
     :return: array of stocks and the forecast period
     """
     # Opens the file
@@ -104,7 +106,7 @@ def create_shifted_orderbook(ticker, start_date, end_date, lag_period = 5, pred_
     stock_lag = pd.DataFrame(index=stock_data.index)
     stock_returns = pd.DataFrame(index=stock_data.index)
 
-    # Initializes dataframe values
+    # Initializes dataframe values and smooths the closing price data
     stock_data_smooth = stock_data['Adj. Close']
     exponential_smoothing(0.7, stock_data_smooth)
 
@@ -114,7 +116,7 @@ def create_shifted_orderbook(ticker, start_date, end_date, lag_period = 5, pred_
     low = stock_data['Adj. Low']
     volume = stock_data['Adj. Volume']
 
-    # Sets lagging price data
+    # Sets lagging price data (previous days' price data as feature inputs)
     for i in range(0, lag_period):
         column_label = 'Lag{:d}'.format(i)
         stock_lag[column_label] = stock_lag['Price'].shift(1+i)
