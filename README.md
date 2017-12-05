@@ -17,7 +17,12 @@ The following technical indicators were used as input features:
 * Prediction Period: 7
 * Cross-Validation Splits: 3
 
-[Results to be added]
+<img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/SP500_10_Stock_Test.PNG" width="600">
+
+| First Header  | Second Header | First Header  | Second Header |  First Header | Second Header |  First Header | Second Header |  
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | 
+| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 ## Usage
 1. Open *parameters.txt* and input the listed parameters (of the format "[Parameter-name]: [value]"). Proper parameter format is included in the text file. 
