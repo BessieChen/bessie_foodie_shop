@@ -17,7 +17,7 @@ The following technical indicators were used as input features:
 * Prediction Period: 7
 * Cross-Validation Splits: 3
 
-One-Split Accuracy
+A graph of the one-split accuracy, and two tables of the average one-split accuracy and the average of the cross-validation tests are displayed below (in that order).
 
 <img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/SP500_10_Stock_Test.PNG" width="600">
 
