@@ -19,9 +19,9 @@ The following technical indicators were used as input features:
 
 <img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/SP500_10_Stock_Test.PNG" width="600">
 
-| First Header  | Second Header | First Header  | Second Header |  First Header | Second Header |  First Header |   
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| 0.71705267 | 0.68505514 | 0.66440167 | 0.65691662 | 0.65328077 | 0.63445114 | 0.623557|
+| Forecast Day | Day 1  | Day 2 | Day 3  | Day 4 |  Day 5 | Day 6 |  Day 7 |   
+| -------------| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
+| Avg. Accuracy | 0.71705267 | 0.68505514 | 0.66440167 | 0.65691662 | 0.65328077 | 0.63445114 | 0.623557|
 
 ## Usage
 1. Open *parameters.txt* and input the listed parameters (of the format "[Parameter-name]: [value]"). Proper parameter format is included in the text file. 
