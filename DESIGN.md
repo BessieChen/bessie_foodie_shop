@@ -31,9 +31,9 @@ The selection of the technical indicators is discussed in the above design secti
 The parameters selected were primary default parameters. The number of estimators ('60') selected was determined using GridSearchCV which allows multiple values of the parameter to be input and the most accurate model to be selected out of those. The number of jobs ('n_jobs') allows for parallel computation. Two was selected for this algorithm for faster computation, but was not modified significantly because the algorithm generally ran quickly (<2 min).
 ### Time Series Cross Validation
 Initially, I attempted to use normal cross-validation (sklearn 'cross_val_score'). However, this randomly permutes the stock price data and splits it into training and testing groups. This modifies the order of the stock data which makes the algorithm predictions unrealistically accurate because, for example, future data may be trained on while future data is used for testing. The results of this cross-validation for an early version of the algorithm are displayed below.
-
+<img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/normal_cv_results.png" width="600">
 Instead, sklearn 'TimeSeriesSplit' was used for cross validation. This splits the data into equal proportions but only uses previous data for training and future data for testing. Results using this form of cross validation are displayed below.
-<img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/Delete-Old-Folders/Forecaster_Sample_Output.PNG" width="600">
+<img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/Forecaster_Sample_Output.PNG" width="600">
 ### Exponential Smoothing
 Based on [previous research](https://arxiv.org/pdf/1605.00003.pdf), exponential smoothing was shown to increase RF classifier prediction accuracy. Smoothing weighs more recent stock prices higher than past stock prices. This increases prediction accuracy becauses current stock price predictions are desired, so more highly weighing current stock prices allows for more recent price trends to be emphasized.
 ### Additional Features
