@@ -17,15 +17,16 @@ The following technical indicators were used as input features:
 * Prediction Period: 7
 * Cross-Validation Splits: 3
 
-**One-Split Accuracy**
+One-Split Accuracy
+
 <img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/SP500_10_Stock_Test.PNG" width="600">
 
-**Average One-Split Accuracy**
+Average One-Split Accuracy
 | Forecast Day | Day 1  | Day 2 | Day 3  | Day 4 |  Day 5 | Day 6 |  Day 7 |   
 | -------------| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
 | Avg. Accuracy | 0.71705267 | 0.68505514 | 0.66440167 | 0.65691662 | 0.65328077 | 0.63445114 | 0.623557 |
 
-**Average Cross-Validation Accuracy**
+Average Cross-Validation Accuracy
 | Forecast Day | Day 1  | Day 2 | Day 3  | Day 4 |  Day 5 | Day 6 |  Day 7 |   
 | -------------| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
 | Avg. Accuracy | 0.7118233 | 0.68891018 | 0.66995239 | 0.6559209 | 0.63126462 | 0.61249649 | 0.60380727 |
