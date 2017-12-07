@@ -12,10 +12,12 @@ The following technical indicators were used as input features:
 ## Usage
 1. Copy the files in this repository
 2. Install *requirements.txt* to obtain the necessary python libraries (all of which are listed in the "Additional Information" section below).
+
 *Note:* If the 'Ta-Lib' library does not install properly, follow the steps under 'Ta-Lib Install'
-2. Open *parameters.txt* and run with the default parameters. 
+2. Open *parameters.txt* and keep the default parameters. 
+
 *Note:* After running the program once, you can input custom parameters (of the format "[Parameter-name]: [value]"). Notes on proper parameter format is included at the top of the text file. The *sample_inputs.txt* file can be referenced for functional sample inputs.
-3. Run *predict.py* to display graphs showing the average forecasting results and the hypothetical earnings from each ticker if the RF classifier was used.
+3. Run *predict.py* to train and test the model. This will also display graphs showing the average forecasting results and the hypothetical earnings from each ticker if the RF classifier was used.
 
 **Ta Lib Install:**
 1. Go to [this link](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib) to download the proper Ta-Lib wrapper (.whl file). Already included in the repository are the 'Ta-Lib Wrappers' folder are the .whl files for install on 64-bit Windows for Python 2.7, 3.4, 3.5, and 3.6.
