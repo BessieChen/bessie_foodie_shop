@@ -22,7 +22,9 @@ A graph of the one-split accuracy, and two tables of the average one-split accur
 | Avg. Accuracy | 0.7118233 | 0.68891018 | 0.66995239 | 0.6559209 | 0.63126462 | 0.61249649 | 0.60380727 |
 
 Sample Results from Backtest (AAPL):
+
 <img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/Sample_backtest_AAPL.PNG" width="600">
+
 ## Functionality
 Additional notes on functionality are included in the code comments and the documentation included with each function. The general order of usage of functions from each file is as follows: *predict.py* calls various helper functions from *helper_functions.py* throughout, and at the end trains/tests using functions from *fit_model_functions.py* and runs backtesting through *backtest.py*.
 ### requirements.txt
