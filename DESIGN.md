@@ -52,7 +52,12 @@ I have past experience with the language and the sklearn library provides easily
 
 Quandl was used because it retreives the necessary stock data (ex. opening/closing price, volume, etc.). It also supports retreiving fundamental data on stocks (ex. Price/Earnings ratio, debt/equity ratio, etc.) through Zack's if this project is expanded in the future. Ta-Lib was used because it has sufficient documentation and access to all the necessary technical indicators.
 ### Why use a Random Forest (RF) Classifier?
-Based on [previous research](https://arxiv.org/ftp/arxiv/papers/1603/1603.00751.pdf), the RF classifier out performed other machine learning algorithms. My tests comparing logistic regression, linear and quadratic discriminant analysis, and the RF classifier also showed the RF classifer had the most accurate prediction.
+Based on [previous research](https://arxiv.org/ftp/arxiv/papers/1603/1603.00751.pdf), the RF classifier out performed other machine learning algorithms. Below is a screenshot of their results:
+
+<img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/RF_Classifier_Results.PNG" width="600">
+*Source: Equity forecast: Predicting long term stock price movement using machine learning- Nikola Milosevic*
+
+My tests comparing logistic regression, linear and quadratic discriminant analysis, and the RF classifier also showed the RF classifer had the most accurate prediction.
 
 ### Why technical and not fundamental analysis?
 [Previous research](https://arxiv.org/ftp/arxiv/papers/1603/1603.00751.pdf) has employed fundamental analysis (using data on the company's financials in relation to stock price movements) to great success. However, the goal of this algorithm was to provide short-term stock movement forecasts, and that was best accomplished through technical analysis. However, fundamental analysis could be used to create quarterly price movement forecasts because the underlying financials of a company would likely affect long term stock price trends.
