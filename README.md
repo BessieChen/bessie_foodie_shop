@@ -9,49 +9,21 @@ For each ticker, the algorithm outputs a graph of the average prediction accurac
 The following technical indicators were used as input features: 
 * Volume, Exponential Moving Average (EMA), Bollinger Bands, MACD, Commodity Channel Index (CCI), Relative Strength Index (RSI), Williams %R, Chaikin Oscillator, Slow Stochastic Oscillator
 
-20 stocks from the S&P 500 were used as a baseline for testing algorithm accuracy. For this test, the following parameters were used:
-* Start-Date: Jan. 1, 2000
-* End-Date: Dec. 1, 2017
-* Training Prop: 0.8
-* Lag (i.e. Past Price Data Used): 20
-* Prediction Period: 7
-* Cross-Validation Splits: 3
-
-A graph of the one-split accuracy, and two tables of the average one-split accuracy and the average of the cross-validation tests are displayed below (in that order).
-
-<img src="https://github.com/Bryanlee99/Stock_Forecasting_RF/blob/master/Images/SP500_10_Stock_Test.PNG" width="600">
-
-| Forecast Day | Day 1  | Day 2 | Day 3  | Day 4 |  Day 5 | Day 6 |  Day 7 |   
-| -------------| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| Avg. Accuracy | 0.71705267 | 0.68505514 | 0.66440167 | 0.65691662 | 0.65328077 | 0.63445114 | 0.623557 |
-
-| Forecast Day | Day 1  | Day 2 | Day 3  | Day 4 |  Day 5 | Day 6 |  Day 7 |   
-| -------------| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| Avg. Accuracy | 0.7118233 | 0.68891018 | 0.66995239 | 0.6559209 | 0.63126462 | 0.61249649 | 0.60380727 |
 ## Usage
-1. Open *parameters.txt* and input the listed parameters (of the format "[Parameter-name]: [value]"). Proper parameter format is included in the text file. 
-2. Run *predict.py*
+1. Copy the files in this repository
+2. Install *requirements.txt* to obtain the necessary python libraries (all of which are listed in the "Additional Information" section below).
+*Note:* If the 'Ta-Lib' library does not install properly, follow the steps under 'Ta-Lib Install'
+2. Open *parameters.txt* and run with the default parameters. 
+*Note:* After running the program once, you can input custom parameters (of the format "[Parameter-name]: [value]"). Notes on proper parameter format is included at the top of the text file. The *sample_inputs.txt* file can be referenced for functional sample inputs.
+3. Run *predict.py* to display graphs showing the average forecasting results and the hypothetical earnings from each ticker if the RF classifier was used.
 
-## Functionality
-Additional notes on functionality are included in the code comments and the documentation included with each function. 
-
-### parameters.txt
-This file takes user input to select the stocks to be forecasted and the future forecast period (the number of days the stock movement will be predicted). These inputs are recorded in the file under the 'Stocks to Forecast' and 'Forecast Period' lines, respectively.
-
-### predict.py
-This is the main file of the program. The function iterates through each input ticker and, for each, prepares training/testing data, trains the RF model, and stores the accuracy results for each run. The RF models are trained and tested using both one-split and cross-validation on the data for each ticker. The results of both are then output as plots.
-
-### helper_functions.py
-This file implements multiple functions which are used by *predict.py*. 
-
-The most extensive function is *create_shifted_orderbook*. This function retrieves the stock data (using the Quandl library) and pre-processes it. The function then adds previous stock price columns to the training data frame and calculates multiple technical indicators (using the Ta-Lib library) and adds them as input features. Lastly, it calculates the percent returns for each day and uses this to determine the direction of stock movement as positive (1) or negative (-1). Additionally, all dataframes are resized to the same shape for training and testing.
-
-### fit\_model_functions.py
-This file implements the one-split and cross-validation training and testing algorithms for the RF model. Previous price data and technical indicators are input features while the direction of price movement is the output. After training the model, the function returns the testing prediction accuracy of the trained model.
+Ta Lib Install:
+1. Go to [this link](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib) to download the proper Ta-Lib wrapper (.whl file). Already included in the repository are the 'Ta-Lib Wrappers' folder are the .whl files for install on 64-bit Windows for Python 2.7, 3.4, 3.5, and 3.6.
+2. Run 'pip install (whl-file-name).whl', where 'whl-file-name' is the name of the .whl file corresponding to your Python version.
 
 ## Additional Information
 ### Requirements
-* Python 3.5
+* Python 3
 * Matplotlib
 * Numpy
 * Sklearn
