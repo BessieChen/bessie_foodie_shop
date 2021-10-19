@@ -1,16 +1,22 @@
 package com.imooc.controller;
 
 import com.fasterxml.jackson.core.json.JsonReadContext;
+import com.imooc.pojo.Users;
 import com.imooc.pojo.bo.UserBO;
 import com.imooc.service.UserService;
+import com.imooc.utils.CookieUtils;
 import com.imooc.utils.JSONReturn;
 import com.imooc.utils.JsonUtils;
+import com.imooc.utils.MD5Utils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @program: bessie-dev
@@ -44,7 +50,7 @@ public class PassportController {
 
     @ApiOperation(value = "用户注册", notes = "用户注册", httpMethod = "POST")
     @PostMapping("/regist")
-    public JSONReturn regist(@RequestBody UserBO userBO)
+    public JSONReturn regist(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response)
     {
         //后端也要检验 userBO
         String userName = userBO.getUsername();
@@ -76,8 +82,57 @@ public class PassportController {
         }
 
         //注册
-        userService.createUser(userBO);
+        //没有设置 cookie: userService.createUser(userBO);
+        Users user = userService.createUser(userBO);
+
+        //3. 添加 cookie, 这样登陆之后, 跳转页面就能知道用户的 cookie 信息
+        user = setNullProperties(user);
+        CookieUtils.setCookie(request, response, "user", JsonUtils.objectToJson(user), true);
+
         return JSONReturn.ok();
+    }
+
+    @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "POST")
+    @PostMapping("/login")
+    public JSONReturn login(@RequestBody UserBO userBo, HttpServletRequest request, HttpServletResponse response) throws Exception
+    {
+        String username = userBo.getUsername();
+        String password = userBo.getPassword();
+
+//        System.out.println(username);
+//        System.out.println(password);
+
+        //1. 判空
+        if(StringUtils.isBlank(username) || StringUtils.isBlank(password))
+        {
+            return JSONReturn.errorMsg("用户名 or 密码不能为空");
+        }
+
+        //2. 传递给 service, 实现登录{即判断用户名输入的密码是否正确}
+        Users user = userService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
+
+        if(user == null)
+        {
+            return JSONReturn.errorMsg("用户名或者密码不正确");
+        }
+
+        //3. 添加 cookie, 这样登陆之后, 跳转页面就能知道用户的 cookie 信息
+        user = setNullProperties(user); //把敏感信息清除
+        CookieUtils.setCookie(request, response, "user", JsonUtils.objectToJson(user), true);
+
+        return JSONReturn.ok();
+
+    }
+
+    private Users setNullProperties(Users user)
+    {
+        user.setPassword(null);
+        user.setMobile(null);
+        user.setEmail(null);
+        user.setCreatedTime(null);
+        user.setUpdatedTime(null);
+        user.setBirthday(null);
+        return user;
     }
 
 }

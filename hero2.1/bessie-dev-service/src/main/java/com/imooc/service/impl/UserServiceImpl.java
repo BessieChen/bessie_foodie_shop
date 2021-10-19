@@ -103,6 +103,24 @@ public class UserServiceImpl implements UserService {
 
         //插入到数据库
         userMapper.insert(user);
-        return null;
+        return user;
+    }
+
+
+    /**
+     * 用户登录: 判断用户名输入的密码是否正确
+     * @param username
+     * @param password
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public Users queryUserForLogin(String username, String password) {
+        Example example = new Example(Users.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("username", username);
+        criteria.andEqualTo("password", password);
+        Users user = userMapper.selectOneByExample(example);
+        return user;
     }
 }

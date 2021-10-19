@@ -26,4 +26,12 @@ public interface UserService {
      *  虽然可以返回 void, 但是还是返回 Users对象 给 controller
      */
     public Users createUser(UserBO userBO);
+
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
+    public Users queryUserForLogin(String username, String password);
 }
