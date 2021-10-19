@@ -73,7 +73,7 @@ public class UserServiceImpl implements UserService {
         user.setId(id);
 
         //用户名
-        user.setUsername(userBO.getUserName());
+        user.setUsername(userBO.getUsername());
 
         //密码, MD5Utils 加密
         try {
@@ -83,7 +83,7 @@ public class UserServiceImpl implements UserService {
         }
 
         //用户名和昵称同名
-        user.setNickname(userBO.getUserName());
+        user.setNickname(userBO.getUsername());
 
         //使用默认头像
         user.setFace(FACE_URL);
