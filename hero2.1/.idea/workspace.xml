@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c91a5a-59b5-466b-b3d2-fb0cf4b54a1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/PassportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/UserBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/UserBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bessie-dev-api/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-api/target/bessie-dev-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-api/target/bessie-dev-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-pojo/target/bessie-dev-pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-pojo/target/bessie-dev-pojo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-service/target/bessie-dev-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/target/bessie-dev-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,27 +34,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/config/Swagger2.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spi/2.4.0/springfox-spi-2.4.0.jar!/springfox/documentation/spi/DocumentationType.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="52" />
+            <state relative-caret-position="647">
+              <caret line="176" column="37" selection-start-line="176" selection-start-column="37" selection-end-line="176" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="631">
@@ -99,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/config/CorsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="151">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/utils/CookieUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -192,7 +190,6 @@
         <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/utils/MD5Utils.java" />
         <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/Gender.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/Application.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/config/Swagger2.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/StuFooController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/config/CorsConfig.java" />
@@ -201,6 +198,8 @@
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/PassportController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/bessie-dev-api/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -306,6 +305,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hero2.1" type="462c0819:PsiDirectoryNode" />
+              <item name="bessie-dev-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bessie-dev" type="b2602c69:ProjectViewProjectNode" />
@@ -528,7 +535,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50102043" side_tool="true" weight="0.2796093" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32983193" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24693878" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24693878" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -539,7 +546,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24969475" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" sideWeight="0.49579832" visible="true" weight="0.14163615" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -587,9 +594,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/Items.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsCommentsMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -844,13 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.4.0/springfox-spring-web-2.4.0.jar!/springfox/documentation/spring/web/plugins/Docket.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -878,7 +875,7 @@
     <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/config/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -925,7 +922,7 @@
     <entry file="file://$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/utils/CookieUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -953,6 +950,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="631">
           <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="176" column="37" selection-start-line="176" selection-start-column="37" selection-end-line="176" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1007,7 +1018,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>bessie-dev</last-edited>
+          <last-edited>bessie-dev-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
