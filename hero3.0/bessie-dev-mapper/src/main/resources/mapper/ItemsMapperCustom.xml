@@ -85,4 +85,47 @@
       <!--  k: 默认排序 -->
       <!--  c: 销量降序排序 -->
       <!--  p: 价格升序排序-->
+
+  <select id="searchItemsByThirdCat" parameterType="map" resultType="com.imooc.pojo.vo.SearchItemsVO">
+    select
+      i.id as itemId,
+      i.item_name as itemName,
+      i.sell_counts as sellCounts,
+      ii.url as imgUrl,
+      temp.price_discount as price
+    from
+      items i
+    left join
+      items_img ii
+    on
+      i.id = ii.item_id
+    left join
+      (
+        select
+          item_id as itemId,
+          min(price_discount) as price_discount
+        from
+          items_spec
+        GROUP BY
+          item_id
+      ) temp
+    on
+      i.id = temp.itemId
+    where
+      ii.is_main = 1
+    and
+      i.cat_id = #{paramsMap.catId}
+    order by
+    <choose>
+      <when test = " paramsMap.sort == &quot;c&quot; ">
+        i.sell_counts desc
+      </when>
+      <when test = " paramsMap.sort == &quot;p&quot; ">
+        temp.price_discount asc
+      </when>
+      <otherwise>
+        i.item_name desc
+      </otherwise>
+    </choose>
+  </select>
 </mapper>

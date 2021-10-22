@@ -132,4 +132,38 @@ public class ItemsController extends BaseController{
         PagedGridResult grid = itemService.searchItems(keywords, sort, page, pageSize);
         return JSONReturn.ok(grid);
     }
+
+    @ApiOperation(value = "通过分类id搜索商品列表", notes = "通过分类id搜索商品列表", httpMethod = "GET")
+    @GetMapping("/catItems")
+    public JSONReturn catItems(
+            @ApiParam(name = "catId", value = "分类id", required = true)
+            @RequestParam Integer catId,
+            @ApiParam(name = "sort", value = "排序方式", required = false)
+            @RequestParam String sort,
+            @ApiParam(name = "page", value = "当前需要第几页", required = false)
+            @RequestParam Integer page,
+            @ApiParam(name = "pageSize", value = "每一页多少条", required = false)
+            @RequestParam Integer pageSize
+    )
+    {
+        //业务逻辑可以是: 如果 keywords == 0, 可以显示全部商品, 或者提示不能为空
+        if(catId == null)
+        {
+            return JSONReturn.errorMsg("分类id不能为空");
+        }
+        if(sort == null)
+        {
+            sort = "k";
+        }
+        if(page == null)
+        {
+            page = 1;
+        }
+        if(pageSize == null)
+        {
+            pageSize = PAGE_SIZE;
+        }
+        PagedGridResult grid = itemService.searchItems(catId, sort, page, pageSize);
+        return JSONReturn.ok(grid);
+    }
 }
