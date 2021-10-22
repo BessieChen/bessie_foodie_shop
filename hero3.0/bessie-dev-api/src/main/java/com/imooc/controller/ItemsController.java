@@ -8,12 +8,14 @@ import com.imooc.pojo.vo.CommentLevelCountsVO;
 import com.imooc.pojo.vo.ItemInfoVO;
 import com.imooc.service.ItemService;
 import com.imooc.utils.JSONReturn;
+import com.imooc.utils.PagedGridResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import tk.mybatis.mapper.util.StringUtil;
 
 import java.util.List;
 
@@ -26,7 +28,7 @@ import java.util.List;
 @Api(value = "商品接口", tags = {"商品信息展示的相关接口"})
 @RestController
 @RequestMapping("items")
-public class ItemsController {
+public class ItemsController extends BaseController{
     @Autowired
     private ItemService itemService;
 
@@ -66,5 +68,34 @@ public class ItemsController {
         }
         CommentLevelCountsVO commentLevelCountsVO = itemService.queryCommentCounts(itemId);
         return JSONReturn.ok(commentLevelCountsVO);
+    }
+
+    @ApiOperation(value = "查询商品评价", notes = "查询商品评价", httpMethod = "GET")
+    @GetMapping("/comments")
+    public JSONReturn comments(
+            @ApiParam(name = "itemId", value = "商品id", required = true)
+            @RequestParam String itemId,
+            @ApiParam(name = "level", value = "评价等级", required = true)
+            @RequestParam Integer level,
+            @ApiParam(name = "page", value = "当前需要第几页", required = false)
+            @RequestParam Integer page,
+            @ApiParam(name = "pageSize", value = "每一页多少条", required = false)
+            @RequestParam Integer pageSize
+            )
+    {
+        if(StringUtils.isBlank(itemId))
+        {
+            return JSONReturn.errorMsg("商品id不能为空");
+        }
+        if(page == null)
+        {
+            page = 1;
+        }
+        if(pageSize == null)
+        {
+            pageSize = COMMENT_PAGE_SIZE;
+        }
+        PagedGridResult grid = itemService.queryPagedComments(itemId, level, page, pageSize);
+        return JSONReturn.ok(grid);
     }
 }
