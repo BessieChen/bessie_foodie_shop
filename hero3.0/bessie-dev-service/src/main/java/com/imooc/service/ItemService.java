@@ -4,6 +4,7 @@ import com.imooc.pojo.Items;
 import com.imooc.pojo.ItemsImg;
 import com.imooc.pojo.ItemsParam;
 import com.imooc.pojo.ItemsSpec;
+import com.imooc.pojo.vo.CommentLevelCountsVO;
 
 import java.util.List;
 
@@ -40,5 +41,5 @@ public interface ItemService {
      * 获取评价个数
      * @param itemId
      */
-    public void queryCommentCounts(String itemId);
+    public CommentLevelCountsVO queryCommentCounts(String itemId);
 }

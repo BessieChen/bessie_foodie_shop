@@ -3,6 +3,7 @@ com/imooc/pojo/Carousel.class
 com/imooc/pojo/ItemsComments.class
 com/imooc/pojo/Orders.class
 com/imooc/pojo/vo/NewItemsVO.class
+com/imooc/pojo/vo/CommentLevelCountsVO.class
 com/imooc/pojo/vo/SubCategoryVO.class
 com/imooc/pojo/UserAddress.class
 com/imooc/pojo/ItemsImg.class

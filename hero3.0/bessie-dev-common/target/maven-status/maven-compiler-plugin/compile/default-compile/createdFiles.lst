@@ -11,6 +11,7 @@ com/imooc/utils/DateUtil.class
 org/n3r/idworker/WorkerIdStrategy.class
 org/n3r/idworker/InvalidSystemClock.class
 com/imooc/utils/JSONReturn.class
+com/imooc/enums/CommentLevelEnum.class
 com/imooc/enums/ShowYesOrNo.class
 org/n3r/idworker/Code.class
 org/n3r/idworker/utils/IPv4Utils.class

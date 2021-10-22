@@ -1,13 +1,9 @@
 package com.imooc.service.impl;
 
-import com.imooc.mapper.ItemsImgMapper;
-import com.imooc.mapper.ItemsMapper;
-import com.imooc.mapper.ItemsParamMapper;
-import com.imooc.mapper.ItemsSpecMapper;
-import com.imooc.pojo.Items;
-import com.imooc.pojo.ItemsImg;
-import com.imooc.pojo.ItemsParam;
-import com.imooc.pojo.ItemsSpec;
+import com.imooc.enums.CommentLevelEnum;
+import com.imooc.mapper.*;
+import com.imooc.pojo.*;
+import com.imooc.pojo.vo.CommentLevelCountsVO;
 import com.imooc.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,6 +33,9 @@ public class ItemServiceImpl implements ItemService {
 
     @Autowired
     private ItemsParamMapper itemsParamMapper;
+
+    @Autowired
+    private ItemsCommentsMapper itemsCommentsMapper;
 
     /**
      * 根据商品id获取商品
@@ -100,8 +99,30 @@ public class ItemServiceImpl implements ItemService {
      *
      * @param itemId
      */
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
-    public void queryCommentCounts(String itemId) {
+    public CommentLevelCountsVO queryCommentCounts(String itemId) {
+        Integer good = getLevelCounts(itemId, CommentLevelEnum.GOOD.type);
+        Integer normal = getLevelCounts(itemId, CommentLevelEnum.NORMAL.type);
+        Integer bad = getLevelCounts(itemId, CommentLevelEnum.BAD.type);
+        Integer total = good + normal + bad;
 
+        CommentLevelCountsVO commentLevelCountsVO = new CommentLevelCountsVO();
+        commentLevelCountsVO.setBadCounts(bad);
+        commentLevelCountsVO.setNormalCounts(normal);
+        commentLevelCountsVO.setGoodCounts(good);
+        commentLevelCountsVO.setTotalCounts(total);
+        return commentLevelCountsVO;
+    }
+
+    private Integer getLevelCounts(String itemId, Integer level)
+    {
+        ItemsComments condition = new ItemsComments();
+        condition.setItemId(itemId);
+        if(level != null)
+        {
+            condition.setCommentLevel(level);
+        }
+        return itemsCommentsMapper.selectCount(condition);
     }
 }
