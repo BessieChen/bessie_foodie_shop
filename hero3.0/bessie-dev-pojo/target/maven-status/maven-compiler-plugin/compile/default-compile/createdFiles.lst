@@ -13,6 +13,7 @@ com/imooc/pojo/Users.class
 com/imooc/pojo/Stu.class
 com/imooc/pojo/Category.class
 com/imooc/pojo/ItemsParam.class
+com/imooc/pojo/vo/ItemInfoVO.class
 com/imooc/pojo/ItemsSpec.class
 com/imooc/pojo/OrderItems.class
 com/imooc/pojo/OrderStatus.class
