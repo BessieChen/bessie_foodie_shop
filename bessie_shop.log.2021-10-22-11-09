@@ -1,0 +1,4 @@
+2021-10-22 11:09:26 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:09:26 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 4 毫秒 ---------
+2021-10-22 11:09:35 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:09:35 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 4 毫秒 ---------

@@ -1,0 +1,20 @@
+2021-10-22 11:29:00 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:00 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 6 毫秒 ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 5 毫秒 ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 5 毫秒 ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 4 毫秒 ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 4 毫秒 ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 3 毫秒 ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:08 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 4 毫秒 ---------
+2021-10-22 11:29:09 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:09 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 3 毫秒 ---------
+2021-10-22 11:29:09 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:09 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 3 毫秒 ---------
+2021-10-22 11:29:09 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-22 11:29:09 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 7 毫秒 ---------

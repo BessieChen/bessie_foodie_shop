@@ -1,10 +1,10 @@
 package com.imooc.controller;
 
-import com.fasterxml.jackson.core.json.JsonReadContext;
 import com.imooc.enums.ShowYesOrNo;
 import com.imooc.pojo.Carousel;
 import com.imooc.pojo.Category;
 import com.imooc.pojo.vo.CategoryVO;
+import com.imooc.pojo.vo.NewItemsVO;
 import com.imooc.service.CarouselService;
 import com.imooc.service.CategoryService;
 import com.imooc.utils.JSONReturn;
@@ -12,10 +12,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -64,6 +61,20 @@ public class IndexController {
         }
         List<CategoryVO> res = categoryService.getSubCatList(rootCat);
         return JSONReturn.ok(res);
+    }
+
+    @ApiOperation(value = "获得六个最新商品", notes = "获得六个最新商品", httpMethod = "GET")
+    @GetMapping("/sixNewItems/{rootCatId}")
+    public JSONReturn getSixNewItems(
+            @ApiParam(name = "rootCatId", value = "一级分类id", required = true)
+            @PathVariable Integer rootCatId)
+    {
+        if(rootCatId == null)
+        {
+            return JSONReturn.errorMsg("该分类不存在");
+        }
+        List<NewItemsVO> list = categoryService.getSixNewItemsLazy(rootCatId);
+        return JSONReturn.ok(list);
     }
 }
 

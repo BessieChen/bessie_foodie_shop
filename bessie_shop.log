@@ -1,5 +1,10 @@
-2021-10-20 11:20:46 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList ---------
-2021-10-20 11:20:46 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList, 耗时: 5 毫秒 ---------
-2021-10-20 11:20:58 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-10-20 11:20:58 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
-2021-10-20 11:20:58 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.
+2021-10-22 12:25:00 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList ---------
+2021-10-22 12:25:00 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList, 耗时: 5 毫秒 ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList, 耗时: 5 毫秒 ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList, 耗时: 4 毫秒 ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList, 耗时: 4 毫秒 ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList ---------
+2021-10-22 12:25:01 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSubCatList, 耗时: 3 毫秒 ---------
