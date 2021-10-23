@@ -1,0 +1,1 @@
+2021-10-23 23:44:37 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userId' is not present]

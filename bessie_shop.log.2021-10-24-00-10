@@ -1,0 +1,21 @@
+2021-10-24 00:10:08 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-24 00:10:13 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2021-10-24 00:10:13 INFO  Application:50 - Starting Application on chenbeiqiansMBP with PID 93060 (/Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/from_0_to_hero/bessie_foodie_shop/hero3.0/bessie-dev-api/target/classes started by bessie in /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/from_0_to_hero/bessie_foodie_shop/hero3.0)
+2021-10-24 00:10:13 INFO  Application:679 - The following profiles are active: dev
+2021-10-24 00:10:15 WARN  ClassPathMapperScanner:44 - No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2021-10-24 00:10:16 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$390461d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 00:10:16 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2021-10-24 00:10:16 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 3141 ms
+2021-10-24 00:10:18 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-24 00:10:18 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-10-24 00:10:18 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-10-24 00:10:18 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-10-24 00:10:18 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2021-10-24 00:10:18 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2021-10-24 00:10:18 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2021-10-24 00:10:18 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2021-10-24 00:10:18 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: updateUsingPOST_1
+2021-10-24 00:10:18 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: listUsingPOST_1
+2021-10-24 00:10:18 INFO  CachingOperationNameGenerator:40 - Generating unique operation named: addUsingPOST_1
+2021-10-24 00:10:18 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2021-10-24 00:10:18 INFO  Application:59 - Started Application in 6.102 seconds (JVM running for 6.576)

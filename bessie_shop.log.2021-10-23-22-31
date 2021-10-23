@@ -1,0 +1,6 @@
+2021-10-23 22:31:26 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2021-10-23 22:31:26 INFO  DispatcherServlet:546 - Completed initialization in 17 ms
+2021-10-23 22:31:26 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
+2021-10-23 22:31:26 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2021-10-23 22:31:26 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2021-10-23 22:31:26 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 262 毫秒 ---------

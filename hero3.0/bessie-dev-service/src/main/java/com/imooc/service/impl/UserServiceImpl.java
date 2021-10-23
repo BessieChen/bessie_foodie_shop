@@ -100,7 +100,7 @@ public class UserServiceImpl implements UserService {
         user.setBirthday(DateUtil.stringToDate("1900-01-01"));
 
         //性别
-        user.setSex(Gender.man.type);
+        user.setSex(Gender.secret.type);
 
         //日期
         user.setCreatedTime(new Date());

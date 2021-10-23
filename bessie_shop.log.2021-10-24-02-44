@@ -1,0 +1,4 @@
+2021-10-24 02:44:58 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
+2021-10-24 02:44:58 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2021-10-24 02:44:58 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2021-10-24 02:44:58 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 287 毫秒 ---------

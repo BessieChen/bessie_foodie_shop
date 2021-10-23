@@ -15,6 +15,7 @@ import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -35,6 +36,9 @@ public class OrdersController {
 
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @ApiOperation(value = "创建订单", notes = "创建订单", httpMethod = "POST")
     @PostMapping("/create")

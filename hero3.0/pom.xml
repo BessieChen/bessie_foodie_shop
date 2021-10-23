@@ -152,6 +152,13 @@
             <version>3.7</version>
         </dependency>
 
+        <!--IOUtils //使用老师的是 org.apache.commons.io-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+
         <!-- swagger2 配置 -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -187,5 +194,7 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.12</version>
         </dependency>
+
+
     </dependencies>
 </project>
