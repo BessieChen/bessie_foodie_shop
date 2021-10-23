@@ -15,6 +15,7 @@ com/imooc/pojo/ItemsSpec.class
 com/imooc/pojo/OrderStatus.class
 com/imooc/pojo/vo/ItemCommentVO.class
 com/imooc/pojo/vo/SimpleItemVO.class
+com/imooc/pojo/bo/SubmitOrderBO.class
 com/imooc/pojo/Carousel.class
 com/imooc/pojo/vo/NewItemsVO.class
 com/imooc/pojo/vo/CommentLevelCountsVO.class

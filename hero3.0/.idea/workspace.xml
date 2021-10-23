@@ -2,21 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c91a5a-59b5-466b-b3d2-fb0cf4b54a1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/AddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/YesOrNo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/AddressBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/AddressServiceImple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/OrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/OrderStatusEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/PayMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/SubmitOrderBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie_shop.log" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie_shop.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bessie-dev-api/target/bessie-dev-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-api/target/bessie-dev-api-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bessie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bessie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsMapperCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsMapperCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bessie-dev-pojo/target/bessie-dev-pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-pojo/target/bessie-dev-pojo-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bessie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bessie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/AddressServiceImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/AddressServiceImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bessie-dev-service/target/bessie-dev-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/target/bessie-dev-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bessie-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bessie-dev-service/target/classes/com/imooc/service/impl/AddressServiceImple.class" beforeDir="false" afterPath="$PROJECT_DIR$/bessie-dev-service/target/classes/com/imooc/service/impl/AddressServiceImple.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,80 +61,88 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/AddressBO.java">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/PayMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-              <folding>
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#946#947#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#1167#1168#0" expanded="true" />
-                <element signature="e#1194#1195#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-                <element signature="e#1420#1421#0" expanded="true" />
-                <element signature="e#1453#1454#0" expanded="true" />
-                <element signature="e#1482#1483#0" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1562#1563#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/AddressController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/AddressService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/AddressServiceImple.java">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/OrdersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+            <state relative-caret-position="631">
+              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/ItemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="99" column="15" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2381">
+              <caret line="309" column="59" selection-start-line="309" selection-start-column="59" selection-end-line="309" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsMapperCustom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -138,9 +152,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -169,12 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/utils/JSONReturn.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/utils/MD5Utils.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/Gender.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/Application.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/config/Swagger2.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/StuFooController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/config/CorsConfig.java" />
         <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/UserService.java" />
         <option value="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/UserBO.java" />
@@ -204,22 +212,28 @@
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/aspect/ServiceLogAspect.java" />
         <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/utils/DesensitizationUtil.java" />
         <option value="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/vo/SearchItemsVO.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/PassportController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/ShopcartBO.java" />
         <option value="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/vo/ShopcartVO.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml" />
-        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/ItemService.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsMapperCustom.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/ItemsController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/ShopcartController.java" />
         <option value="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/AddressBO.java" />
-        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/AddressService.java" />
         <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/YesOrNo.java" />
         <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/AddressController.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/PayMethod.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/AddressService.java" />
         <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/AddressServiceImple.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/SubmitOrderBO.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/OrderStatusEnums.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml" />
+        <option value="$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsMapperCustom.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/OrdersController.java" />
       </list>
     </option>
   </component>
@@ -335,6 +349,15 @@
               <item name="bessie-dev-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.imooc.controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="OrdersController" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="bessie-dev" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="bessie-dev-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -411,32 +434,6 @@
               <item name="bessie-dev-mapper" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.imooc.mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="CategoryMapperCustom" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="bessie-dev" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="bessie-dev-mapper" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.imooc.mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="ItemsMapperCustom" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="bessie-dev" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="bessie-dev-mapper" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.imooc.my.mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="bessie-dev" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="bessie-dev-mapper" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -489,7 +486,7 @@
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com.imooc.pojo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="UserAddress" type="1a9f42e2:ClassTreeNode" />
+              <item name="OrderStatus" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="bessie-dev" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -498,15 +495,6 @@
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com.imooc.pojo.bo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="bessie-dev" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="bessie-dev-pojo" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.imooc.pojo.bo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="AddressBO" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="bessie-dev" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -574,11 +562,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.imooc.enums" />
-      <recent name="com.imooc.mapper" />
-      <recent name="com.imooc.controller" />
       <recent name="com.imooc.service.impl" />
       <recent name="com.imooc.service" />
+      <recent name="com.imooc.controller" />
+      <recent name="com.imooc.enums" />
+      <recent name="com.imooc.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper" />
@@ -674,8 +662,8 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9030545" visible="true" weight="0.3003663" />
-      <window_info id="Structure" order="1" sideWeight="0.096945554" side_tool="true" weight="0.3003663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5498008" visible="true" weight="0.3003663" />
+      <window_info id="Structure" order="1" sideWeight="0.45019922" side_tool="true" weight="0.3003663" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -683,7 +671,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50102043" side_tool="true" weight="0.2796093" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32983193" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23163265" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23163265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -742,78 +730,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/CategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/CarouselService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/ShowYesOrNo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/CategoryType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/vo/SubCategoryVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="66" column="40" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/CategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1072,13 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1177,30 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="132" column="96" selection-start-line="132" selection-start-column="86" selection-end-line="132" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsMapperCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/ItemsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1221,30 +1106,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
           <caret line="68" column="26" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3705">
-          <caret line="249" column="68" selection-start-line="249" selection-start-column="49" selection-end-line="249" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1275,6 +1140,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/AddressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/PayMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/AddressBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/UserAddress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -1284,59 +1183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/AddressService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/AddressBO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1562#1563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/AddressController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+        <state relative-caret-position="586">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1345,11 +1193,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/AddressServiceImple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+        <state relative-caret-position="554">
+          <caret line="183" column="53" selection-start-line="183" selection-start-column="53" selection-end-line="183" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/bo/SubmitOrderBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-pojo/src/main/java/com/imooc/pojo/OrderItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-common/src/main/java/com/imooc/enums/OrderStatusEnums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-mapper/src/main/java/com/imooc/mapper/ItemsMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="99" column="15" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2381">
+          <caret line="309" column="59" selection-start-line="309" selection-start-column="59" selection-end-line="309" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-service/src/main/java/com/imooc/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bessie-dev-api/src/main/java/com/imooc/controller/OrdersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
         </state>
       </provider>
     </entry>

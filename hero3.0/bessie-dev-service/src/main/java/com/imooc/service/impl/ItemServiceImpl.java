@@ -3,6 +3,7 @@ package com.imooc.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.imooc.enums.CommentLevelEnum;
+import com.imooc.enums.YesOrNo;
 import com.imooc.mapper.*;
 import com.imooc.pojo.*;
 import com.imooc.pojo.vo.CommentLevelCountsVO;
@@ -18,6 +19,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.swing.*;
 import java.util.*;
 
 /**
@@ -249,5 +251,63 @@ public class ItemServiceImpl implements ItemService {
 
         List<ShopcartVO> res = itemsMapperCustom.queryItemsBySpecIds(specIdsList);
         return res;
+    }
+
+    /**
+     * 根据规格id: specId, 获得相应的商品规格
+     *
+     * @param specId
+     * @return
+     */
+    @Override
+    public ItemsSpec queryItemsSpecBySpecId(String specId) {
+        ItemsSpec itemsSpec = new ItemsSpec();
+        itemsSpec.setId(specId);
+        return itemsSpecMapper.selectOne(itemsSpec);
+    }
+
+    /**
+     * 根据商品id: itemId, 获得相应的商品图片
+     *
+     * @param itemId
+     * @return
+     */
+    @Override
+    public ItemsImg queryItemMainImgById(String itemId) {
+        ItemsImg itemsImg = new ItemsImg();
+        itemsImg.setItemId(itemId);
+        itemsImg.setIsMain(YesOrNo.YES.num);
+        return itemsImgMapper.selectOne(itemsImg);
+    }
+
+    /**
+     * 创建订单之后, 扣除商品库存
+     *
+     * 方式:
+         *  synchronized 不推荐使用，集群下无用，性能低下
+         *  锁数据库: 不推荐，导致数据库性能低下
+         *  分布式锁 zookeeper redis: 之后会使用
+     * 伪代码:
+         *  lockUtil.getLock(); -- 加锁
+         *  1. 查询库存
+         *         int stock = 10;
+         *  2. 判断库存，是否能够减少到0以下
+         *         if (stock - buyCounts < 0) {
+         *              提示用户库存不够
+         *             10 - 3 -3 - 5 = -1
+         *         }
+         *  lockUtil.unLock(); -- 解锁
+     * @param specId
+     * @param buyCount
+     */
+    @Transactional(propagation = Propagation.REQUIRED)
+    @Override
+    public void decreaseItemSpecStock(String specId, int buyCount) {
+        // 使用自定义 mapper 中实现的乐观锁:
+        int res = itemsMapperCustom.decreaseItemSpecStock(specId, buyCount);
+        if(res != 1) //说明失败, 因为成功是1
+        {
+            throw new RuntimeException("订单创建失败, 原因: 库存不足");
+        }
     }
 }

@@ -81,4 +81,25 @@ public interface ItemService {
      * @return 每个商品是一个 ShopcartBO, 全部的商品都装在 List<> 中
      */
     public List<ShopcartVO> queryItemsBySpecIds(String specIds);
+
+    /**
+     * 根据规格id: specId, 获得相应的商品规格
+     * @param specId
+     * @return
+     */
+    public ItemsSpec queryItemsSpecBySpecId(String specId);
+
+    /**
+     * 根据商品id: itemId, 获得相应的商品图片
+     * @param itemId
+     * @return
+     */
+    public ItemsImg queryItemMainImgById(String itemId);
+
+    /**
+     * 创建订单之后, 扣除商品库存
+     * @param specId
+     * @param buyCount
+     */
+    public void decreaseItemSpecStock(String specId, int buyCount);
 }

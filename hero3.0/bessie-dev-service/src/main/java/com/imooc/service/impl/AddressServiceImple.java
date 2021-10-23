@@ -173,6 +173,20 @@ public class AddressServiceImple implements AddressService {
         defaultAddress.setId(addressId);    //设置主键
         defaultAddress.setIsDefault(YesOrNo.YES.num);
         userAddressMapper.updateByPrimaryKeySelective(defaultAddress);
+    }
 
+    /**
+     * 获取 UserAddress, 用于创建订单
+     *
+     * @param userId
+     * @param addressId
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public UserAddress queryUserAddress(String userId, String addressId) {
+        UserAddress userAddress = new UserAddress();
+        userAddress.setUserId(userId);
+        userAddress.setId(addressId); //这个是主键
+        return userAddressMapper.selectOne(userAddress);
     }
 }
