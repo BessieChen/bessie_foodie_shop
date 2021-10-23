@@ -1,0 +1,4 @@
+2021-10-23 09:09:01 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.queryAll ---------
+2021-10-23 09:09:01 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2021-10-23 09:09:01 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2021-10-23 09:09:01 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.queryAll, 耗时: 336 毫秒 ---------

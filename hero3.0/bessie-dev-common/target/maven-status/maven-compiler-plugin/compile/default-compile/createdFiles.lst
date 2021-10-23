@@ -22,6 +22,7 @@ com/imooc/utils/CookieUtils.class
 org/n3r/idworker/Test.class
 org/n3r/idworker/utils/HttpReq.class
 org/n3r/idworker/utils/Props.class
+com/imooc/enums/YesOrNo.class
 com/imooc/enums/CategoryType.class
 org/n3r/idworker/utils/Utils.class
 org/n3r/idworker/utils/Props$Silent.class

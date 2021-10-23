@@ -1,0 +1,12 @@
+2021-10-23 09:38:10 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2021-10-23 09:38:10 INFO  DispatcherServlet:546 - Completed initialization in 12 ms
+2021-10-23 09:38:10 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.addNewUserAddress ---------
+2021-10-23 09:38:10 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2021-10-23 09:38:10 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2021-10-23 09:38:10 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.addNewUserAddress, 耗时: 365 毫秒 ---------
+2021-10-23 09:38:10 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.queryAll ---------
+2021-10-23 09:38:10 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.queryAll, 耗时: 6 毫秒 ---------
+2021-10-23 09:38:56 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.addNewUserAddress ---------
+2021-10-23 09:38:56 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.addNewUserAddress, 耗时: 8 毫秒 ---------
+2021-10-23 09:38:56 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.queryAll ---------
+2021-10-23 09:38:56 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.queryAll, 耗时: 3 毫秒 ---------
