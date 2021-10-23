@@ -49,4 +49,22 @@ public class ShopcartController {
         return JSONReturn.ok();
     }
 
+    @ApiOperation(value = "商品从购物车中删除", notes = "商品从购物车中删除", httpMethod = "POST")
+    @PostMapping("/del")
+    public JSONReturn del(
+            @ApiParam(name = "userId", value = "用户id", required = true)
+            @RequestParam String userId,
+            @ApiParam(name = "itemSpecId", value = "要移除的商品", required = true)
+            @RequestParam String itemSpecId,
+            HttpServletRequest request,
+            HttpServletResponse response)
+    {
+        if(StringUtils.isBlank(userId) || StringUtils.isBlank(itemSpecId))
+        {
+            return JSONReturn.errorMsg("参数不能为空");
+        }
+        //TODO  登录情况下, 商品从购物车中删除, 会同步到 redis 缓存
+        return JSONReturn.ok();
+    }
+
 }
