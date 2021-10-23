@@ -1,0 +1,3 @@
+2021-10-23 08:13:02 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-10-23 08:13:02 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-10-23 08:13:03 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

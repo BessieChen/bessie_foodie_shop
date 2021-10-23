@@ -6,6 +6,7 @@ import com.imooc.pojo.ItemsParam;
 import com.imooc.pojo.ItemsSpec;
 import com.imooc.pojo.vo.CommentLevelCountsVO;
 import com.imooc.pojo.vo.ItemInfoVO;
+import com.imooc.pojo.vo.ShopcartVO;
 import com.imooc.service.ItemService;
 import com.imooc.utils.JSONReturn;
 import com.imooc.utils.PagedGridResult;
@@ -165,5 +166,24 @@ public class ItemsController extends BaseController{
         }
         PagedGridResult grid = itemService.searchItems(catId, sort, page, pageSize);
         return JSONReturn.ok(grid);
+    }
+
+    /**
+     * 用户如果长时间没有登录网站, 商品金额和规格可能过期, 此函数是用于刷新商品价格
+     * @param itemSpecIds
+     * @return
+     */
+    @ApiOperation(value = "刷新商品价格", notes = "刷新商品价格", httpMethod = "GET")
+    @GetMapping("/refresh")
+    public JSONReturn refresh(
+            @ApiParam(name = "itemSpecIds", value = "拼接的规格ids", required = true, example = "1001,1002,1003")
+            @RequestParam String itemSpecIds)
+    {
+        if(StringUtils.isBlank(itemSpecIds))
+        {
+            return JSONReturn.ok(); //返回成功也是没关系的, 就是空
+        }
+        List<ShopcartVO> list = itemService.queryItemsBySpecIds(itemSpecIds);
+        return JSONReturn.ok(list);
     }
 }

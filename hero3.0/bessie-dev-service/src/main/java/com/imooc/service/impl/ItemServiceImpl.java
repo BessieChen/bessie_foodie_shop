@@ -8,6 +8,7 @@ import com.imooc.pojo.*;
 import com.imooc.pojo.vo.CommentLevelCountsVO;
 import com.imooc.pojo.vo.ItemCommentVO;
 import com.imooc.pojo.vo.SearchItemsVO;
+import com.imooc.pojo.vo.ShopcartVO;
 import com.imooc.service.ItemService;
 import com.imooc.utils.DesensitizationUtil;
 import com.imooc.utils.PagedGridResult;
@@ -17,9 +18,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @program: bessie-dev
@@ -218,6 +217,7 @@ public class ItemServiceImpl implements ItemService {
      * @param pageSize
      * @return
      */
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public PagedGridResult searchItems(Integer catId, String sort, Integer page, Integer pageSize) {
         Map<String, Object> map = new HashMap<>();
@@ -231,5 +231,23 @@ public class ItemServiceImpl implements ItemService {
         PageHelper.startPage(page, pageSize);
         List<SearchItemsVO> list =  itemsMapperCustom.searchItemsByThirdCat(map);
         return setterPagedGrid(list, page);
+    }
+
+    /**
+     * 根据前端传来的 specIds, 返回购物车的商品数据
+     *
+     * @param specIds
+     * @return 每个商品是一个 ShopcartBO, 全部的商品都装在 List<> 中
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<ShopcartVO> queryItemsBySpecIds(String specIds) {
+        String ids[] = specIds.split(",");
+        List<String> specIdsList = new ArrayList<>();
+        Collections.addAll(specIdsList, ids); //目标:specIdsList, 源: ids
+        System.out.println(ids);
+
+        List<ShopcartVO> res = itemsMapperCustom.queryItemsBySpecIds(specIdsList);
+        return res;
     }
 }

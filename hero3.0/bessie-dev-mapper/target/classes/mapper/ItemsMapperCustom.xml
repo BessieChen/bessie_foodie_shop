@@ -128,4 +128,33 @@
       </otherwise>
     </choose>
   </select>
+
+
+  <select id="queryItemsBySpecIds" parameterType="List" resultType="com.imooc.pojo.vo.ShopcartVO">
+    select
+      ti.id as itemId,
+      tii.url as itemImgUrl,
+      ti.item_name as itemName,
+      tis.id as specId,
+      tis.name as specName,
+      tis.price_discount as priceDiscount,
+      tis.price_normal as priceNormal
+    from
+      items_spec tis
+    left join
+      items ti
+    on
+      ti.id = tis.item_id
+    left join
+      items_img tii
+    on
+      tii.item_id = tis.item_id
+    where
+      tii.is_main = 1
+    and
+      tis.id in
+      <foreach collection="paramsList" index="index" item="specId" open="(" separator="," close=")">
+        #{specId}
+      </foreach>
+  </select>
 </mapper>

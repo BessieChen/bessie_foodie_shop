@@ -5,7 +5,7 @@ import com.imooc.pojo.ItemsImg;
 import com.imooc.pojo.ItemsParam;
 import com.imooc.pojo.ItemsSpec;
 import com.imooc.pojo.vo.CommentLevelCountsVO;
-import com.imooc.pojo.vo.ItemCommentVO;
+import com.imooc.pojo.vo.ShopcartVO;
 import com.imooc.utils.PagedGridResult;
 
 import java.util.List;
@@ -74,4 +74,11 @@ public interface ItemService {
      * @return
      */
     public PagedGridResult searchItems(Integer catId, String sort, Integer page, Integer pageSize);
+
+    /**
+     * 根据前端传来的 specIds, 返回购物车的商品数据
+     * @param specIds
+     * @return 每个商品是一个 ShopcartBO, 全部的商品都装在 List<> 中
+     */
+    public List<ShopcartVO> queryItemsBySpecIds(String specIds);
 }

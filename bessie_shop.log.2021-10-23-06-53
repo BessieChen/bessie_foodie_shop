@@ -1,0 +1,10 @@
+2021-10-23 06:53:06 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CarouselServiceImpl.queryAllCarousel ---------
+2021-10-23 06:53:06 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.queryAllRootLevelCat ---------
+2021-10-23 06:53:06 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.queryAllRootLevelCat, 耗时: 3 毫秒 ---------
+2021-10-23 06:53:06 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CarouselServiceImpl.queryAllCarousel, 耗时: 7 毫秒 ---------
+2021-10-23 06:53:07 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-23 06:53:07 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 3 毫秒 ---------
+2021-10-23 06:53:20 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-23 06:53:20 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 3 毫秒 ---------
+2021-10-23 06:53:20 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
+2021-10-23 06:53:20 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 3 毫秒 ---------

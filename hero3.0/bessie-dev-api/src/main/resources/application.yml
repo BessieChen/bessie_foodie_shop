@@ -43,8 +43,8 @@ spring:
 mybatis:
   type-aliases-package: com.imooc.pojo          # 所有POJO类所在包路径
   mapper-locations: classpath:mapper/*.xml      # mapper映射文件
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter. 这是一个适配器
+#  configuration: # 打印 SQL 语句, 先不用了
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter. 这是一个适配器
 
 ############################################################
 #
