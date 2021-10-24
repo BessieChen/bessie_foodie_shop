@@ -1,0 +1,43 @@
+2021-10-25 04:09:05 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemsBySpecIds ---------
+2021-10-25 04:09:05 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.queryItemsBySpecIds, 耗时: 3 毫秒 ---------
+2021-10-25 04:09:12 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.queryAll ---------
+2021-10-25 04:09:12 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.queryAll, 耗时: 8 毫秒 ---------
+2021-10-25 04:09:28 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.addNewUserAddress ---------
+2021-10-25 04:09:28 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.addNewUserAddress, 耗时: 14 毫秒 ---------
+2021-10-25 04:09:28 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.queryAll ---------
+2021-10-25 04:09:28 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.queryAll, 耗时: 2 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.OrderServiceImpl.createOrder ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.AddressServiceImple.queryUserAddress ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.AddressServiceImple.queryUserAddress, 耗时: 1 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemsSpecBySpecId ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.queryItemsSpecBySpecId, 耗时: 2 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemById ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.queryItemById, 耗时: 1 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemMainImgById ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.queryItemMainImgById, 耗时: 2 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.decreaseItemSpecStock ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.decreaseItemSpecStock, 耗时: 1 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemsSpecBySpecId ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.queryItemsSpecBySpecId, 耗时: 1 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemById ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.queryItemById, 耗时: 1 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemMainImgById ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.queryItemMainImgById, 耗时: 1 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.decreaseItemSpecStock ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.ItemServiceImpl.decreaseItemSpecStock, 耗时: 1 毫秒 ---------
+2021-10-25 04:09:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.OrderServiceImpl.createOrder, 耗时: 31 毫秒 ---------
+2021-10-25 04:09:30 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2021-10-25 04:09:39 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
+2021-10-25 04:09:39 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 5 毫秒 ---------
+2021-10-25 04:09:47 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserInfo ---------
+2021-10-25 04:09:47 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserInfo, 耗时: 10 毫秒 ---------
+2021-10-25 04:09:47 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2021-10-25 04:09:49 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
+2021-10-25 04:09:49 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 2 毫秒 ---------
+2021-10-25 04:09:53 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserFace ---------
+2021-10-25 04:09:53 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserFace, 耗时: 3 毫秒 ---------
+2021-10-25 04:09:53 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2021-10-25 04:09:54 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
+2021-10-25 04:09:54 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 2 毫秒 ---------
+2021-10-25 04:09:56 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders ---------
+2021-10-25 04:09:56 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders, 耗时: 4 毫秒 ---------

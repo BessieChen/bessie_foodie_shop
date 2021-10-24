@@ -29,7 +29,7 @@ import java.util.*;
  * @create: 2021-10-22 12:34
  **/
 @Service
-public class ItemServiceImpl implements ItemService {
+public class ItemServiceImpl  extends BaseServiceImpl implements ItemService {
 
     @Autowired
     private ItemsMapper itemsMapper;
@@ -166,23 +166,6 @@ public class ItemServiceImpl implements ItemService {
         }
 
         return setterPagedGrid(list, page);
-    }
-
-    /**
-     * 将结果分页
-     * @param list
-     * @param page
-     * @return
-     */
-    public PagedGridResult setterPagedGrid(List<?> list, Integer page)
-    {
-        PageInfo<?> pageList = new PageInfo<>();
-        PagedGridResult grid = new PagedGridResult();
-        grid.setPage(page);
-        grid.setRows(list);
-        grid.setTotal(pageList.getPages());
-        grid.setRecords(pageList.getTotal());
-        return grid;
     }
 
     /**
