@@ -48,6 +48,7 @@ public class CenterUserSerivce implements com.imooc.service.center.CenterUserSer
      * @param userId
      * @param centerUserBO
      */
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public Users updateUserInfo(String userId, CenterUserBO centerUserBO) {
         Users users = new Users();
@@ -65,6 +66,7 @@ public class CenterUserSerivce implements com.imooc.service.center.CenterUserSer
      * @param faceUrl
      * @return
      */
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public Users updateUserFace(String userId, String faceUrl) {
         Users users = new Users();

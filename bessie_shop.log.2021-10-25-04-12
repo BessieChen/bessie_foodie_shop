@@ -1,0 +1,10 @@
+2021-10-25 04:12:00 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders ---------
+2021-10-25 04:12:00 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders, 耗时: 6 毫秒 ---------
+2021-10-25 04:12:22 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders ---------
+2021-10-25 04:12:22 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders, 耗时: 4 毫秒 ---------
+2021-10-25 04:12:27 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrdersByUserId ---------
+2021-10-25 04:12:27 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrdersByUserId, 耗时: 2 毫秒 ---------
+2021-10-25 04:12:27 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.updateDeleteOrderStatus ---------
+2021-10-25 04:12:27 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.updateDeleteOrderStatus, 耗时: 4 毫秒 ---------
+2021-10-25 04:12:27 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders ---------
+2021-10-25 04:12:27 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders, 耗时: 2 毫秒 ---------

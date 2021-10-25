@@ -9,6 +9,7 @@ import com.imooc.mapper.OrdersMapperCustom;
 import com.imooc.pojo.OrderStatus;
 import com.imooc.pojo.Orders;
 import com.imooc.pojo.vo.MyOrdersVO;
+import com.imooc.pojo.vo.OrderStatusCountsVO;
 import com.imooc.service.center.MyOrdersSerivce;
 import com.imooc.service.impl.BaseServiceImpl;
 import com.imooc.utils.PagedGridResult;
@@ -109,6 +110,7 @@ public class MyOrdersServiceImpl extends BaseServiceImpl implements MyOrdersSeri
      * 注意 OrderStatus 里面没有变量 userId
      * @param orderId
      */
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public boolean updateReceiveOrderStatus(String orderId) {
         OrderStatus target = new OrderStatus();
@@ -132,6 +134,7 @@ public class MyOrdersServiceImpl extends BaseServiceImpl implements MyOrdersSeri
      * @param userId
      * @param orderId
      */
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public boolean updateDeleteOrderStatus(String userId, String orderId) {
         Orders target = new Orders();
@@ -146,5 +149,47 @@ public class MyOrdersServiceImpl extends BaseServiceImpl implements MyOrdersSeri
 
         int res = ordersMapper.updateByExampleSelective(target, source);
         return res == 1; //如果==1, 说明成功
+    }
+
+    /**
+     * 获取用户的所有非终态订单的数量
+     *
+     * @param userId
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public OrderStatusCountsVO getOrderStatusCounts(String userId) {
+        OrderStatusCountsVO res = new OrderStatusCountsVO();
+        Map<String, Object> map = new HashMap<>();
+        map.put("userId", userId);
+        map.put("orderStatus", OrderStatusEnums.WAIT_PAY.num);              //待付款
+        res.setWaitPayCounts(ordersMapperCustom.getMyOrderStatusCounts(map));
+        map.put("orderStatus", OrderStatusEnums.WAIT_DELIVER.num);          //待发货
+        res.setWaitDeliverCounts(ordersMapperCustom.getMyOrderStatusCounts(map));
+        map.put("orderStatus", OrderStatusEnums.WAIT_RECEIVE.num);          //待收货
+        res.setWaitReceiveCounts(ordersMapperCustom.getMyOrderStatusCounts(map));
+        map.put("orderStatus", OrderStatusEnums.SUCCESS.num);
+        map.put("isComment", YesOrNo.NO.num);   //交易成功 且 没有评价
+        res.setWaitCommentCounts(ordersMapperCustom.getMyOrderStatusCounts(map));
+        return res;
+    }
+
+    /**
+     * 获取订单动向
+     *
+     * @param userId
+     * @param page
+     * @param pageSize
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public PagedGridResult getOrderTrend(String userId, Integer page, Integer pageSize) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("userId", userId);
+        PageHelper.startPage(page, pageSize);
+        List<OrderStatus> list = ordersMapperCustom.getMyOrderTrend(map);
+        return setterPagedGrid(list, page);
     }
 }

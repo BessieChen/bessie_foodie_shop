@@ -242,6 +242,7 @@ public class ItemServiceImpl  extends BaseServiceImpl implements ItemService {
      * @param specId
      * @return
      */
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public ItemsSpec queryItemsSpecBySpecId(String specId) {
         ItemsSpec itemsSpec = new ItemsSpec();
@@ -255,6 +256,7 @@ public class ItemServiceImpl  extends BaseServiceImpl implements ItemService {
      * @param itemId
      * @return
      */
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public ItemsImg queryItemMainImgById(String itemId) {
         ItemsImg itemsImg = new ItemsImg();

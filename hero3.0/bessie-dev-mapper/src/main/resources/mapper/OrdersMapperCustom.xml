@@ -10,6 +10,7 @@
     <result column="realPayAmount" property="realPayAmount"/>
     <result column="postAmount" property="postAmount"/>
     <result column="orderStatus" property="orderStatus"/>
+    <result column="isComment" property="isComment"/>
 
     <collection property="subOrderItemList"
                 select = "getSubOrderList"
@@ -48,7 +49,8 @@
       o.pay_method as payMethod,
       o.real_pay_amount as realPayAmount,
       o.post_amount as postAmount,
-      os.order_status as orderStatus
+      os.order_status as orderStatus,
+      o.is_comment as isComment
     from
       orders o
     left join
@@ -66,7 +68,54 @@
       o.updated_time DESC
   </select>
 
-<!--  一下是错误的分页-->
+  <select id="getMyOrderStatusCounts" parameterType="Map" resultType="int">
+    SELECT
+      count(1)
+    FROM
+      orders o
+    LEFT JOIN
+      order_status os
+    on
+      o.id = os.order_id
+    WHERE
+      o.user_id = #{paramsMap.userId}
+    AND
+      os.order_status = #{paramsMap.orderStatus}
+    <if test="paramsMap.isComment != null">
+      and o.is_comment = #{paramsMap.isComment}
+    </if>
+  </select>
+
+
+  <select id="getMyOrderTrend" parameterType="Map" resultType="com.imooc.pojo.OrderStatus">
+
+    SELECT
+      os.order_id as orderId,
+      os.order_status as orderStatus,
+      os.created_time as createdTime,
+      os.pay_time as payTime,
+      os.deliver_time as deliverTime,
+      os.success_time as successTime,
+      os.close_time as closeTime,
+      os.comment_time as commentTime
+    FROM
+      orders o
+    LEFT JOIN
+      order_status os
+    on
+      o.id = os.order_id
+    WHERE
+      o.is_delete = 0
+    AND
+      o.user_id = #{paramsMap.userId}
+    AND
+      os.order_status in (20, 30, 40)
+    ORDER BY
+      os.order_id
+    DESC
+  </select>
+
+<!--  一下是错误的分页, 不支持嵌套 -->
   <select id="getSubOrderListWrong" parameterType="String" resultType="com.imooc.pojo.vo.MySubOrderItemVO">
     select
     oi.item_id as itemId,

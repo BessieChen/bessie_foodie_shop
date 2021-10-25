@@ -1,0 +1,5 @@
+2021-10-25 09:16:17 ERROR ServiceLogAspect:73 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.getOrderStatusCounts, 耗时: 95306 毫秒 ---------
+2021-10-25 09:16:17 WARN  HikariPool:766 - DateSourceHikariCP - Thread starvation or clock leap detected (housekeeper delta=2m5s44ms).
+2021-10-25 09:16:17 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-25 09:16:17 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2021-10-25 09:16:17 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.

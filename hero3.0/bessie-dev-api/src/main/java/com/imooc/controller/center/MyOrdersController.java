@@ -4,6 +4,7 @@ import com.imooc.controller.BaseController;
 import com.imooc.enums.PayMethod;
 import com.imooc.pojo.Orders;
 import com.imooc.pojo.bo.SubmitOrderBO;
+import com.imooc.pojo.vo.OrderStatusCountsVO;
 import com.imooc.service.OrderService;
 import com.imooc.service.center.MyOrdersSerivce;
 import com.imooc.utils.CookieUtils;
@@ -50,7 +51,7 @@ public class MyOrdersController extends BaseController {
             @RequestParam Integer pageSize
     )
     {
-        System.out.println(orderStatus);
+//        System.out.println(orderStatus);
         if(StringUtils.isBlank(userId))
         {
             return JSONReturn.errorMsg("用户id不能为空");
@@ -131,20 +132,42 @@ public class MyOrdersController extends BaseController {
         return JSONReturn.ok();
     }
 
-    /**
-     * 查看用户id是否和订单id关联, 如果不关联, 返回错误
-     * @param userId
-     * @param orderId
-     * @return
-     */
-    private JSONReturn checkUserIdOrderId(String userId, String orderId)
+    @ApiOperation(value="获得订单数量", notes="获得订单数量", httpMethod = "POST")
+    @PostMapping("/statusCounts")
+    public JSONReturn statusCounts(
+            @ApiParam(name = "userId", value = "用户id", required = true)
+            @RequestParam String userId)
     {
-        Orders res = myOrdersSerivce.queryMyOrdersByUserId(userId, orderId);
-        if(res != null)
-        {
-            return JSONReturn.ok();
+        if (StringUtils.isBlank(userId)) {
+            return JSONReturn.errorMsg("用户ID不能为空");
         }
-        return JSONReturn.errorMsg("用户id和订单id不匹配");
+        OrderStatusCountsVO vo = myOrdersSerivce.getOrderStatusCounts(userId);
+        return JSONReturn.ok(vo);
+    }
+
+    @ApiOperation(value="获得订单动向", notes="获得订单动向", httpMethod = "POST")
+    @PostMapping("/trend")
+    public JSONReturn trend(
+            @ApiParam(name = "userId", value = "用户id", required = true)
+            @RequestParam String userId,
+            @ApiParam(name = "page", value = "当前需要第几页", required = false)
+            @RequestParam Integer page,
+            @ApiParam(name = "pageSize", value = "每一页多少条", required = false)
+            @RequestParam Integer pageSize)
+    {
+        if (StringUtils.isBlank(userId)) {
+            return JSONReturn.errorMsg("用户ID不能为空");
+        }
+        if(page == null)
+        {
+            page = 1;
+        }
+        if(pageSize == null)
+        {
+            pageSize = COMMON_PAGE_SIZE;
+        }
+        PagedGridResult grid = myOrdersSerivce.getOrderTrend(userId, page, pageSize);
+        return JSONReturn.ok(grid);
     }
 
 }
