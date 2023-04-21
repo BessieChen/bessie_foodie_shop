@@ -12,7 +12,8 @@ import org.springframework.stereotype.Component;
  **/
 @Component     //作为组件被 springboot 扫描
 @ConfigurationProperties(prefix = "file")   //因为 file-upload-dev.properties 中写的是: file.imageUserFaceLocation
-@PropertySource("classpath:file-upload-dev.properties")
+//@PropertySource("classpath:file-upload-dev.properties")
+@PropertySource("classpath:file-upload-prod.properties")
 public class FileUpload {
     private String imageUserFaceLocation;   //这个就是 file-upload-dev.properties 中定义的
     private String imageServerUrl;

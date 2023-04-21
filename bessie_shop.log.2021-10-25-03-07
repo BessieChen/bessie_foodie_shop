@@ -1,6 +1,0 @@
-2021-10-25 03:07:03 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
-2021-10-25 03:07:04 INFO  DispatcherServlet:546 - Completed initialization in 11 ms
-2021-10-25 03:07:04 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders ---------
-2021-10-25 03:07:04 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
-2021-10-25 03:07:04 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
-2021-10-25 03:07:04 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders, 耗时: 407 毫秒 ---------

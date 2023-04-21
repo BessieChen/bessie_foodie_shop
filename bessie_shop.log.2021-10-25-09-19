@@ -1,8 +1,0 @@
-2021-10-25 09:19:18 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.getOrderStatusCounts ---------
-2021-10-25 09:19:18 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.getOrderStatusCounts, 耗时: 14 毫秒 ---------
-2021-10-25 09:19:20 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.getOrderStatusCounts ---------
-2021-10-25 09:19:20 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.getOrderStatusCounts, 耗时: 6 毫秒 ---------
-2021-10-25 09:19:22 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders ---------
-2021-10-25 09:19:22 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.queryMyOrders, 耗时: 17 毫秒 ---------
-2021-10-25 09:19:30 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.getOrderStatusCounts ---------
-2021-10-25 09:19:30 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.MyOrdersServiceImpl.getOrderStatusCounts, 耗时: 6 毫秒 ---------

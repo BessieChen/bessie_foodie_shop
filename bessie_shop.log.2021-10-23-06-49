@@ -1,3 +1,0 @@
-2021-10-23 06:49:08 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.ItemServiceImpl.queryItemsBySpecIds ---------
-2021-10-23 06:49:28 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
-2021-10-23 06:49:29 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.

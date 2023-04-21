@@ -1,8 +1,0 @@
-2021-10-24 00:23:02 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
-2021-10-24 00:23:02 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 7 毫秒 ---------
-2021-10-24 00:23:07 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserInfo ---------
-2021-10-24 00:23:07 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserInfo, 耗时: 6 毫秒 ---------
-2021-10-24 00:23:07 INFO  CookieUtils:210 - ========== domainName: localhost ==========
-2021-10-24 00:23:09 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
-2021-10-24 00:23:09 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 3 毫秒 ---------
-2021-10-24 00:23:21 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userId' is not present]

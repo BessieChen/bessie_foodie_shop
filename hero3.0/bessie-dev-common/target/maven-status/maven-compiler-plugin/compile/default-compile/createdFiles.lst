@@ -23,6 +23,7 @@ org/n3r/idworker/IdWorker.class
 com/imooc/utils/CookieUtils.class
 org/n3r/idworker/Test.class
 org/n3r/idworker/utils/HttpReq.class
+com/imooc/utils/MD5Utils.class
 org/n3r/idworker/utils/Props.class
 com/imooc/enums/YesOrNo.class
 com/imooc/enums/CategoryType.class

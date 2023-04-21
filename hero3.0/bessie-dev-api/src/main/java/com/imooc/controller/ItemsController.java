@@ -184,6 +184,7 @@ public class ItemsController extends BaseController{
             return JSONReturn.ok(); //返回成功也是没关系的, 就是空
         }
         List<ShopcartVO> list = itemService.queryItemsBySpecIds(itemSpecIds);
+
         return JSONReturn.ok(list);
     }
 }

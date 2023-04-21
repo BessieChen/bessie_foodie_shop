@@ -1,8 +1,0 @@
-2021-10-23 14:42:47 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.queryAllRootLevelCat ---------
-2021-10-23 14:42:47 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CarouselServiceImpl.queryAllCarousel ---------
-2021-10-23 14:42:47 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
-2021-10-23 14:42:47 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
-2021-10-23 14:42:47 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CarouselServiceImpl.queryAllCarousel, 耗时: 461 毫秒 ---------
-2021-10-23 14:42:47 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.queryAllRootLevelCat, 耗时: 461 毫秒 ---------
-2021-10-23 14:42:47 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy ---------
-2021-10-23 14:42:47 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy, 耗时: 6 毫秒 ---------

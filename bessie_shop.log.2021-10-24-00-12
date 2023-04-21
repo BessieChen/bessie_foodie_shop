@@ -1,5 +1,0 @@
-2021-10-24 00:12:18 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserInfo ---------
-2021-10-24 00:12:18 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
-2021-10-24 00:12:18 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
-2021-10-24 00:12:18 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserInfo, 耗时: 356 毫秒 ---------
-2021-10-24 00:12:18 INFO  CookieUtils:210 - ========== domainName: localhost ==========

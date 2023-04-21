@@ -1,2 +1,0 @@
-2021-10-24 01:16:49 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo ---------
-2021-10-24 01:16:49 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.queryUserInfo, 耗时: 3 毫秒 ---------

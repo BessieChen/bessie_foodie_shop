@@ -1,7 +1,0 @@
-2021-10-24 02:48:52 WARN  HikariPool:766 - DateSourceHikariCP - Thread starvation or clock leap detected (housekeeper delta=1m31s863ms).
-2021-10-24 02:48:52 INFO  ServiceLogAspect:57 - --------- 开始执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserFace ---------
-2021-10-24 02:48:52 INFO  ServiceLogAspect:87 - --------- 结束执行 class com.imooc.service.impl.center.CenterUserSerivce.updateUserFace, 耗时: 98 毫秒 ---------
-2021-10-24 02:48:52 INFO  CookieUtils:210 - ========== domainName: localhost ==========
-2021-10-24 02:48:52 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-10-24 02:48:52 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
-2021-10-24 02:48:52 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.
