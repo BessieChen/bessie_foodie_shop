@@ -1,0 +1,10 @@
+server:
+  port: 8088
+
+spring:
+  datasource:                                           # 数据源的相关配置
+    url: jdbc:mysql://localhost:3306/foodie-shop-dev?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    password: Chen@0921
+mybatis:
+  #  configuration: # 打印 SQL 语句, 先不用了
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter. 这是一个适配器

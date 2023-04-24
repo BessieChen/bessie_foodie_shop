@@ -1,0 +1,8 @@
+server:
+  port: 80
+
+spring:
+  datasource:                                           # 数据源的相关配置
+    #url: jdbc:mysql://10.0.8.4:3306/foodie-shop-dev?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true # 集群+分布式
+    url: jdbc:mysql://localhost:3306/foodie-shop-dev?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    password: Chen@0921
